@@ -57,6 +57,7 @@ namespace GFuess_the_name
                 }
             }
             Console.WriteLine("");
+
             Console.WriteLine("Well done you have been able to guess the random number. You took " + counter + " attempts ");
 
             Console.WriteLine("Done you want to play again y/n");
@@ -64,7 +65,7 @@ namespace GFuess_the_name
             playAgain = Console.ReadLine();
             Console.WriteLine("");
 
-            if (playAgain == "y")
+            while (playAgain == "y")
             {
                 int randomGuess2 = 0;
                 int counter2 = 1;
@@ -113,15 +114,15 @@ namespace GFuess_the_name
                     
                 }
                 Console.WriteLine("");
+
                 Console.WriteLine("Well done you have been able to guess the random number. You took " + counter2 + " attempts ");
+
                 Console.WriteLine("Done you want to play again y/n");
                 Console.WriteLine("");
                 playAgain = Console.ReadLine();
                 Console.WriteLine("");
-
-
             }
-            else if (playAgain == "n")
+             if (playAgain == "n")
             {
                 Console.WriteLine("Thanks for playing");
             }
